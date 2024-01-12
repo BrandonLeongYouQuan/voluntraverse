@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+
+.sky {
+    transform: translateZ(-15px) scale(3);
+}
+
+.mountain {
+    transform: translateZ(-10px) scale(2);
+}
+
+.moon {
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.ground {
+    transform: translateZ(-5px) scale(1.5)  ;
+}
+
+
+
+.sky,
+.mountain,
+.moon,
+.ground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.title{
+    font: sans-serif;
+    font-size: 4rem;
+    color: rgb(213, 223, 234);
+    text-shadow: 0 0 8px black;;
+}
+
+section {
+    font-size: 1rem;
+    padding: 2rem;
+    background-color: #0c071e ;
+    color: white;
+    font: 2em sans-serif;
+}
+
+h2 {
+    font-size: 4rem;
+    color: lightblue;
+    text-shadow: 0 0 8px black;
+    
+}
